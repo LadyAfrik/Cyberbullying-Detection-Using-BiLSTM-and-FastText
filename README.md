@@ -11,10 +11,7 @@ This repository contains an implementation of **Bidirectional Long Short-Term Me
 - **Performance Evaluation**: Includes confusion matrix and classification metrics.  
 
 ## Installation  
-To set up the environment, install the required libraries:  
-
-```bash
-pip install tensorflow gensim nltk pandas seaborn plotly imbalanced-learn
+To set up the environment, install the necessary libraries in the `cyberbullying_Using_BiLSTM.ipynb` file.
 
 
 ## Dataset  
