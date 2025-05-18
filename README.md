@@ -15,3 +15,31 @@ To set up the environment, install the required libraries:
 
 ```bash
 pip install tensorflow gensim nltk pandas seaborn plotly imbalanced-learn
+
+
+## Dataset  
+The dataset consists of tweets labeled with different cyberbullying categories. The dataset can be accessed via Kaggle using this link: [Cyberbullying Classification Dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification). The preprocessing script cleans the text and prepares it for training.  
+
+## Model Architecture  
+The BiLSTM model consists of:  
+- **Embedding Layer** – Uses FastText word embeddings  
+- **Bidirectional LSTM Layers** – Captures sequential patterns  
+- **Dropout Layers** – Prevents overfitting  
+- **Fully Connected Dense Layers** – Learns classification patterns  
+- **Softmax Output** – Predicts the cyberbullying class  
+
+## Training  
+Run the `cyberbullying_Using_BiLSTM.ipynb` file from beginning to end. The model is trained over **10 epochs** using the **Adam optimizer** with a learning rate of **0.005**.  
+
+## Evaluation  
+After training, the model is evaluated using:  
+- **Accuracy**  
+- **F1-score**  
+- **Confusion Matrix Visualization**  
+
+## Results  
+- Achieved **92% accuracy** and **92% macro-averaged F1-score** after 10 epochs.  
+- Outperforms previous BiLSTM implementations with **higher efficiency** and **performance**.  
+
+## Citation  
+If you use this repository in your work, please consider citing it accordingly.  
